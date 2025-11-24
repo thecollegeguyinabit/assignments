@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@300..800&family=Montserrat&family=Open+Sans:wght@600&family=Poppins:wght@400;600;700&family=Volkhov:wght@700&display=swap"
+    rel="stylesheet" />
+  <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script> -->
+
+  <link rel="stylesheet" href="main.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="circle"></div>
+  <div class="decore">
+    <img src="./pictures/Decore.svg" alt="decore" />
+  </div>
+
+  <header>
+    <img src="./pictures/Logo.svg" alt="Logo" width="114.91px" height="39.99px" />
+    <nav>
+      <ul>
+        <a>Destinations</a>
+        <a>Hotels</a>
+        <a>Flights</a>
+        <a>Bookings</a>
+      </ul>
+      <button>Login</button>
+      <button id="signUp">Sign Up</button>
+      <select name="lang" id="lang">
+        <option value="en">EN</option>
+        <option value="jp">JP</option>
+        <option value="esp">ESP</option>
+        <option value="de">DE</option>
+      </select>
+     </nav>
+  </header>
+
+  <main>
+    <section class="hero-content">
+      <section>
+        <div>
+          <h3>BEST DESTINATIONS AROUND THE WORLD</h3>
+          <h1>
+            Travel, enjoy<span><img src="./pictures/hero/enjoyDecore.svg" alt="enjoy" /></span>
+            and live a new and full life
+          </h1>
+          <p class="des">
+            Built Wicket longer admire do barton vanity itself do in it.
+            Preferred to sportsmen it engrossed listening. Park gate sell they
+            west hard for the.
+          </p>
+          <div id="travel-container">
+            <button>Find out more</button>
+            <img src="./pictures/hero/Play button.svg" alt="play button" id="play_button" />
+            <p>Play Demo</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <img src="./pictures/hero/plane.svg" alt="plane" class="plane" />
+        <img src="./pictures/hero/Traveller 1.svg" alt="traveller" id="traveller" />
+        <img src="./pictures/hero/plane.svg" alt="plane" class="plane" />
+      </section>
+    </section>
+    <section class="service">
+      <div class="section-header">
+        <h6>CATEGORY</h6>
+        <h2>We Offer Best Services</h2>
+        <img src="./pictures/serv/DecorePlus.svg" alt="extra decore" loading="lazy" />
+      </div>
+      <div class="service-grid">
+        <div class="service-grid-card">
+          <img src="./pictures/serv/GroupImg1.svg" alt="weather" loading="lazy" />
+          <h3>Calculated Weather</h3>
+          <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+          <img src="./pictures/serv/rectangle.svg" alt="rectangle" class="rect" />
+        </div>
+        <div class="service-grid-card flights">
+          <img src="./pictures/serv/GroupImg2.svg" alt="flights" loading="lazy" />
+          <h3>Best Flights</h3>
+          <p>Engrossed listening. Park gate sell they west hard for the.</p>
+          <img src="./pictures/serv/rectangle.svg" alt="rectangle" class="rect" />
+        </div>
+        <div class="service-grid-card">
+          <img src="./pictures/serv/GroupImg3.svg" alt="events" loading="lazy" />
+          <h3>Local Events</h3>
+          <p>
+            Barton vanity itself do in it. Preferd to men it engrossed
+            listening.
+          </p>
+          <img src="./pictures/serv/rectangle.svg" alt="rectangle" class="rect" />
+        </div>
+        <div class="service-grid-card">
+          <img src="./pictures/serv/GroupImg4.svg" alt="customization" loading="lazy" />
+          <h3>Customization</h3>
+          <p>
+            We deliver outsourced aviation services for military customers
+          </p>
+          <img src="./pictures/serv/rectangle.svg" alt="rectangle" class="rect" />
+        </div>
+      </div>
+    </section>
+    <section class="destinations">
+      <div class="section-header">
+        <h6>Top Selling</h6>
+        <h2>Top Destinations</h2>
+      </div>
+       <div class="destinations-c">
+        <div class="destinations-c-card">
+          <img src="./pictures/serv/rome.png" class="card-img-top" alt="Rome" loading="lazy" />
+          <div class="card-body">
+            <div class="card-body-top">
+              <p>Rome, Italy</p>
+              <p>$5.42K</p>
+            </div>
+            <div class="card-body-bottom">
+              <img src="./pictures/serv/arrow.svg" alt="arrow" class="arrow" />
+              <p>10 Days Trip</p>
+            </div>
+          </div>
+        </div>
+        <div class="destinations-c-card">
+          <img src="./pictures/serv/london.png" class="card-img-top" alt="London" loading="lazy" />
+          <div class="card-body">
+            <div class="card-body-top">
+              <p>London, UK</p>
+              <p>$4.2K</p>
+            </div>
+            <div class="card-body-bottom">
+              <img src="./pictures/serv/arrow.svg" alt="arrow" class="arrow" />
+              <p>12 Days Trip</p>
+            </div>
+          </div>
+        </div>
+        <div class="destinations-c-card">
+          <img src="./pictures/serv/euro.png" class="card-img-top" alt="Euro" loading="lazy" />
+          <div class="card-body">
+            <div class="card-body-top">
+              <p>Full Europe</p>
+              <p>$15K</p>
+            </div>
+            <div class="card-body-bottom">
+              <img src="./pictures/serv/arrow.svg" alt="arrow" class="arrow" />
+              <p>28 Days Trip</p>
+            </div>
+            <img src="./pictures/serv/d-decore.svg" alt="decore" class="decore-in-dest" />
+          </div>
+        </div>
+      </div> 
+    </section>
+    <section class="booking">
+      <div class="booking-l">
+        <div class="section-header">
+          <h6>Easy and Fast</h6>
+          <h2>Book your next trip in 3 easy steps</h2>
+        </div>
+        <div class="booking-l-c">
+          <img src="./pictures/booking/destinationsvg.svg" alt="destinations-icon" loading="lazy" />
+          <div class="booking-l-c-text">
+            <h3>Choose Destination</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Urna,
+              tortor tempus.
+            </p>
+          </div>
+        </div>
+        <div class="booking-l-c">
+          <img src="./pictures/booking/paymentsvg.svg" alt="destinations-icon" loading="lazy" />
+          <div class="booking-l-c-text">
+            <h3>Make Payment</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Urna,
+              tortor tempus.
+            </p>
+          </div>
+        </div>
+        <div class="booking-l-c">
+          <img src="./pictures/booking/taxi.svg" alt="destinations-icon" loading="lazy" />
+          <div class="booking-l-c-text">
+            <h3>Reach Airport on Selected Date</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Urna,
+              tortor tempus.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="booking-r">
+        <div id="blue-circle">
+          <img src="./pictures/booking/blue-shadow.svg" alt="" />
+        </div>
+        <div class="booking-r-card-1">
+          <img src="./pictures/serv/greece.svg" alt="greece" loading="lazy" />
+          <div class="card-info">
+            <h5>Trip To Greece</h5>
+            <h6>14-29 June | by Robbin joseph</h6>
+            <div class="trip-icons">
+              <img src="./pictures/booking/leaf.svg" alt="leaf icon" loading="lazy" />
+              <img src="./pictures/booking/map icon.svg" alt="leaf icon" loading="lazy" />
+              <img src="./pictures/booking/share.svg" alt="leaf icon" loading="lazy" />
+            </div>
+            <div class="visitors">
+              <img src="./pictures/booking/building.svg" alt="building" loading="lazy" />
+              <span>24 people going </span>
+              <img src="./pictures/booking/heart.svg" id="heart" alt="heart" loading="lazy" />
+            </div>
+          </div>
+          <div class="booking-r-card-2">
+            <img src="./pictures/booking/Mask Group.png" alt="rome " id="masked" />
+            <div class="card-info">
+              <h6>Ongoing</h6>
+              <h5>Trip To Rome</h5>
+              <p><span>40%</span> completed</p>
+              <img src="./pictures/booking/progress-bar.svg" alt="progress-bar" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="review-l">
+        <div class="section-header">
+          <h6>TESTIMONIALS</h6>
+          <h2>What People Say About Us.</h2>
+          <img src="./pictures/review/page-icon.svg" alt="" />
+        </div>
+      </div>
+      <div class="review-r">
+        <img src="./pictures/serv/avatar.svg" alt="" id="avatar" />
+        <div class="review-r-1">
+          <div class="review-r-1-text">
+            <p>
+              “On the Windows talking painted pasture yet its express parties
+              use. Sure last upon he same as knew next. Of believed or
+              diverted no.”
+            </p>
+            <h4>Mike Taylor</h4>
+            <h6>Lahore, Pakistan</h6>
+          </div>
+        </div>
+        <div class="review-r-2">
+          <div class="review-r-2-text">
+            <h4>Chris Thomas</h4>
+            <h6>CEO of Red Button</h6>
+          </div>
+        </div>
+        <img src="./pictures/review/pages.svg" alt="" id="page" />
+      </div>
+    </section>
+    <div class="logos">
+      <div class="logos-container">
+        <img src="./pictures/logos/logo1.svg" alt="" />
+      </div>
+      <div class="logos-container">
+        <img src="./pictures/logos/logo2.svg" alt="" />
+      </div>
+      <div class="logos-container">
+        <img src="./pictures/logos/logo3.svg" alt="" />
+      </div>
+      <div class="logos-container">
+        <img src="./pictures/logos/logo4.svg" alt="" />
+      </div>
+      <div class="logos-container">
+        <img src="./pictures/logos/logo5.svg" alt="" />
+      </div>
+    </div>
+    <div class="subscription">
+      <div class="share-icon">
+        <img src="./pictures/subscription/share.svg" alt="share-icon" />
+      </div>
+      <div class="subscription-container">
+        <div class="subscription-container-c">
+          <p>
+            Subscribe to get information, latest news and other interesting
+            offers about Jadoo
+          </p>
+          <div>
+            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6L9.4 10.05C9.75556 10.3167 10.2444 10.3167 10.6 10.05L16 6" stroke="#39425D"
+                stroke-linecap="round" />
+              <rect x="0.5" y="0.5" width="20" height="17" rx="4.5" stroke="#39425D" />
+            </svg>
+            <input type="text" name="email" id="email" placeholder=" Your email" />
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+        <div class="decore1">
+          <img src="./pictures/subscription/mask1.svg" alt="" />
+        </div>
+        <div class="decore2">
+          <img src="./pictures/subscription/mask2.svg" alt="" />
+        </div>
+      </div>
+      <div class="decore-plus">
+        <img src="./pictures/subscription/Group 5.svg" alt="extra decore" loading="lazy" id="decoreplus" />
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h4>Jadoo.</h4>
+        <p>Book your trip in minute, get full Control for much longer.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <a href="">
+            <li>About</li>
+          </a>
+          <a href="">
+            <li>Careers</li>
+          </a>
+          <a href="">
+            <li>Mobile</li>
+          </a>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <a href="">
+            <li>Help/FAQ</li>
+          </a>
+          <a href="">
+            <li>Press</li>
+          </a>
+          <a href="">
+            <li>Affilates</li>
+          </a>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>More</h3>
+        <ul>
+          <a href="">
+            <li>Airline Fees</li>
+          </a>
+          <a href="">
+            <li>Airline</li>
+          </a>
+          <a href="">
+            <li>Low Fare tips</li>
+          </a>
+        </ul>
+      </div>
+      <div class="footer-socials">
+        <div class="socials-logo">
+          <img src="./pictures/footer/Facebook.svg" alt="Facebook" />
+          <img src="./pictures/footer/Instagram.svg" alt="Instagram" />
+          <img src="./pictures/footer/X.svg" alt="Twitter" />
+        </div>
+        <p>Discover our app</p>
+        <div class="stores">
+          <img src="./pictures/footer/Google Play.svg" alt="Google Play Store" />
+          <img src="./pictures/footer/Play Store.svg" alt="Apple Store" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>All rights reserved@jadoo.co</p>
+    </div>
+    <div class="circle-d">
+      <img src="./pictures/BottomDecore.svg" alt="">
+    </div>
+  </footer>
+</body>
+
+</html>

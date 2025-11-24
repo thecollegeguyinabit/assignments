@@ -1,0 +1,9 @@
+@forward 'typography';
+
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

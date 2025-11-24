@@ -1,0 +1,65 @@
+
+@use '../globals/' as *;
+
+header{
+    margin-block-start: 42px;
+    margin-inline: 140px 138px;
+    margin-inline: 140px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;;
+    img{
+        margin-inline-end: 50px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        column-gap: 5%;
+        width: 100%;
+        margin-inline: 10% 0%;
+        font-family: $secondary-font-reg;
+        font-weight: 400;
+        font-size: 1.0625rem;
+        ul{
+            display: flex;
+            margin: 0;
+            column-gap: 55px;
+            a{
+                margin-inline-end: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+        button{
+            font-family: $secondary-font-reg;
+            font-weight: 500;
+            font-size: 1.0625rem;
+            background-color: transparent;
+            border: none;
+            color: $text-color-dark;
+            cursor: pointer;
+        }
+        #signUp{
+            width: 102px;
+            height: 40px;
+            border: 1px solid #212832;
+            border-radius: 5px;
+            padding: 0;
+            color: $text-color-dark;
+            background-color: transparent;
+            font-family: $secondary-font-reg;
+            font-weight: 500;
+            font-size: 1.0625rem;
+        }
+        #lang{
+            font-family: $secondary-font-reg;
+            font-weight: 500;
+            font-size: 1.0625rem;
+            border: none;
+            color: $text-color-dark;
+            background-color: transparent;
+            cursor: pointer;
+        }
+}
+

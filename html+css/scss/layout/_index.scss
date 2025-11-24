@@ -1,0 +1,24 @@
+@forward 'header';
+@forward 'footer';
+@forward 'section';
+
+.circle{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: #D5AEE4;
+    border-radius: 50%;
+    filter: blur(60px) opacity(30%);
+    top: 30px;
+    left: -400px;
+    z-index: -1;
+}
+
+.decore {
+    position: absolute;
+    top: -1%;
+    right: -2%;
+    z-index: -1;
+    transform: scaleY(114%) scaleX(100%);
+}
+

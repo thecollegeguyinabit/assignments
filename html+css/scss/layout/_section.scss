@@ -1,0 +1,602 @@
+@use "../globals" as *;
+
+
+//hero
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  section:first-child {
+    display: flex;
+    div {
+      h3 {
+        color: #df6951;
+        font-family: $primary-font-reg;
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-block-start: 130px;
+      }
+      h1 {
+        margin-block: 30px 0;
+        width: 600px;
+        @include Volkhov;
+        color: #181e4b;
+        font-size: 5.25rem;
+        line-height: 89px;
+        letter-spacing: -4%;
+        position: relative;
+        img:first-child {
+          position: absolute;
+          z-index: -2;
+          top: 67px;
+          right: -55px;
+        }
+      }
+      .des {
+        @include PoppinsRegular;
+        line-height: 30px;
+        width: 480px;
+        letter-spacing: 0%;
+        margin-block-start: 30px;
+      }
+      #travel-container {
+        display: flex;
+        align-items: center;
+        margin-block-start: -35px;
+        button {
+          width: 170px;
+          height: 60px;
+          border-radius: 10px;
+          border-color: transparent;
+          background-color: #f1a501;
+          color: white;
+          @include GoogleSansBold;
+          cursor: pointer;
+        }
+        img {
+          margin-top: 30px;
+          margin-right: -10px;
+          cursor: pointer;
+        }
+        p {
+          @include PoppinsRegular;
+          font-size: 1rem;
+
+        }
+      }
+    }
+  }
+
+  section:last-child {
+    position: relative;
+    #traveller {
+      z-index: 3;
+      margin: 30px 0 0 0;
+      position: absolute;
+      top: 1%;
+      right: -5%;
+    }
+    .plane {
+      position: absolute;
+    }
+    .plane:first-child {
+      z-index: 4;
+      top: 65px;
+      left: 0px;
+    }
+    .plane:last-child {
+      z-index: 2;
+      top: 150px;
+      left: 80.5%;
+      rotate: -7deg;
+    }
+  }
+}
+
+// service
+.service {
+  margin-block-start: 200px;
+  height: 525px;
+  position: relative;
+
+  .section-header {
+    margin-bottom: 62px;
+    text-align: center;
+    img {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      // z-index: 1;
+    }
+  }
+
+  &-grid {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block-start: -50px;
+
+    &-card {
+      background-color: white;
+      max-width: 267px;
+      max-height: 314px;
+      border-radius: 36px;
+      margin-block-start: 105px;
+      position: relative;
+      padding: 10px 30px;
+      @include flex-center;
+      img {
+        margin-block-end: 29px;
+      }
+      p {
+        text-align: center;
+        margin-block-start: 15px;
+        width: 180px;
+        line-height: 26px;
+        @include PoppinsRegular;
+      }
+      .rect {
+        background-color: #df6951;
+        position: absolute;
+        z-index: -1;
+        bottom: -62px;
+        left: -30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 10px;
+        opacity: 0;
+      }
+    }
+    &-card:nth-child(2) {
+      .rect {
+        bottom: -25px;
+        left: -30px;
+      }
+    }
+    .flights {
+      border-radius: 36px;
+      img {
+        margin: -30px 0 -10px 0;
+      }
+    }
+    &-card:hover {
+      box-shadow: 0px 1.85px 3.15px 0px #00000001,
+        0px 8.15px 6.52px 0px #00000002, 0px 20px 13px 0px #00000003,
+        0px 38.52px 25.48px 0px #00000003, 0px 64.81px 46.85px 0px #00000004,
+        0px 100px 80px 0px #00000005;
+      background-color: hsl(0, 1%, 99%);
+      .rect {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+//destinations
+.destinations {
+  margin-block-start: 120px;
+  text-align: center;
+  .section-header {
+    margin-bottom: 62px;
+  }
+  &-c {
+    border-radius: 24px;
+    display: flex;  
+    justify-content: space-evenly;
+
+    &-card {
+      text-align: center;
+      position: relative;
+      .card-img-top {
+        width: 315px;
+        height: 457px;
+        border-radius: 24px;
+      }
+
+      .card-body {
+        position: absolute;
+        bottom: 0.9%;
+        left: -0.5%;
+        width: 318px;
+        height: 130px;
+        background-color: white;
+        border-radius: 0 0 24px 24px;
+        box-shadow: 0px 1.85px 3.15px 0px #00000001,
+          0px 8.15px 6.52px 0px #00000002, 0px 20px 13px 0px #00000003,
+          0px 38.52px 25.48px 0px #00000003, 0px 64.81px 46.85px 0px #00000004,
+          0px 100px 80px 0px #00000005;
+        p {
+          @include PoppinsRegular;
+          line-height: 125%;
+        }
+        &-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-inline: 15px;
+        }
+        &-bottom {
+          display: flex;
+          align-items: center;
+          padding-left: 5%;
+          gap: 7px;
+        }
+      }
+    }
+    &-card:last-child {
+      position: relative;
+
+      .decore-in-dest {
+        position: absolute;
+        z-index: -1;
+        top: -172px;
+        right: -58px;
+      }
+    }
+  }
+
+}
+
+//booking
+.booking {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 160px 0;
+  height: auto;
+  position: relative;
+
+  &-l {
+    // margin-inline: 0 100px ;
+    .section-header {
+      margin-bottom: 31px;
+      h2 {
+        width: 512px;
+        height: 130px;
+      }
+    }
+    &-c {
+      display: flex;
+      gap: 21px;
+      margin-block-end: 20px;
+    }
+    &-c-text {
+      display: flex;
+      flex-direction: column;
+      width: 327px;
+      gap: 5px;
+      margin-block-start: 5px;
+      h3 {
+        @include PoppinsRegular;
+        margin: 0;
+        font-weight: 700;
+        line-height: 125%;
+      }
+      p {
+        @include PoppinsRegular;
+        margin: 0;
+        line-height: 125%;
+      }
+    }
+  }
+  &-r {
+    width: 370px;
+    height: 400px;
+    margin-block-start: 78px;
+    margin-inline: 0 100px;
+    position: relative;
+    #blue-circle {
+      position: absolute;
+      top: -240px;
+      right: 460px;
+      width: 1px;
+      height: 1px;
+    }
+    &-card {
+      &-1 {
+        background-color: white;
+        position: absolute;
+        border-radius: 26px;
+        display: flex;
+        flex-direction: column;
+        padding: 22px 24px 26px 25px;
+        z-index: 2;
+        box-shadow: 0px 1.85px 3.15px 0px #00000001,
+          0px 8.15px 6.52px 0px #00000002, 0px 20px 13px 0px #00000003,
+          0px 38.52px 25.48px 0px #00000003, 0px 64.81px 46.85px 0px #00000004,
+          0px 100px 80px 0px #00000005;
+        .card-info {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          margin-block-start: 26px;
+          h5,
+          h6,
+          span {
+            @include PoppinsRegular;
+            margin: 0;
+            line-height: 125%;
+          }
+          h5 {
+            color: #080809;
+            font-size: 1.125rem;
+            letter-spacing: 1.5%;
+          }
+          h6 {
+            color: #84829a;
+            letter-spacing: -0.5%;
+          }
+          .trip-icons {
+            margin-block-start: 5px;
+            display: flex;
+            gap: 15px;
+          }
+          .visitors {
+            display: flex;
+            margin-block-start: 10px;
+            gap: 1rem;
+            span {
+              letter-spacing: -2%;
+            }
+            #heart {
+              margin-inline-start: auto;
+            }
+          }
+        }
+      }
+      &-2 {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        background-color: white;
+        border-radius: 18px;
+        position: absolute;
+        z-index: 2;
+        right: -140px;
+        bottom: 12%;
+        width: 293px;
+        height: 129px;
+        box-shadow: 0px 1.85px 3.15px 0px #00000001,
+          0px 8.15px 6.52px 0px #00000002, 0px 20px 13px 0px #00000003,
+          0px 38.52px 25.48px 0px #00000003, 0px 64.81px 46.85px 0px #00000004,
+          0px 100px 80px 0px #00000005;
+        #masked {
+          padding: 18px 0 0 20px;
+          width: 50px;
+          aspect-ratio: 1;
+        }
+        .card-info {
+          margin-block-start: 15px;
+          gap: 5px;
+          p {
+            margin: 0;
+            @include PoppinsRegular;
+            color: #080809;
+            line-height: 125%;
+            letter-spacing: -5.5%;
+            span {
+              color: #8a79df;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//review
+.review {
+  margin-block: 200px 0;
+  height: 356px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-evenly;
+  .section-header {
+    max-width: 410px;
+    h6 {
+      font-weight: 600;
+    }
+    img {
+      margin-block: 82px 0;
+    }
+  }
+  &-r {
+    position: relative;
+    padding: 50px 0 0 80px;
+    z-index: 1;
+    width: 619px;
+    #avatar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    #page{
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    &-1{
+        width: 504px;
+        background-color: white;
+        box-shadow: 0px 1.85px 3.15px 0px #00000001,
+            0px 8.15px 6.52px 0px #00000002, 0px 20px 13px 0px #00000003,
+            0px 38.52px 25.48px 0px #00000003, 0px 64.81px 46.85px 0px #00000004,
+            0px 100px 80px 0px #00000005;
+            border-radius: 10px;
+        &-text {
+              padding: 28px 68px 34px 34px;
+              h4,h6,p {
+                @include Poppins;
+                margin: 0;
+              }
+              h6,p {
+                font-size: 0.875rem;
+                font-weight: 400;
+              }
+              h4 {
+                font-size: 1.125rem;
+                padding-top: 32px;
+              }
+              p{
+                font-size: 1rem;
+                line-height: 2rem;
+                width: 402px;
+              }
+            }
+        }
+        &-2{
+            z-index: -1;
+            width: 504px;
+            height: 200px;
+            position: absolute;
+            left: 130px;
+            bottom: -5px;
+            box-shadow: 0 1px 8px -5px black;
+            display: flex;
+            flex-direction: column-reverse;
+            border-radius: 10px;
+            &-text {
+              padding: 0 68px 0 34px;
+              h4,h6 {
+                @include Poppins;
+                margin: 0;
+              }
+              h6{
+                font-size: 0.875rem;
+                font-weight: 400;
+                padding-bottom: 22px;
+              }
+              h4 {
+                font-size: 1.125rem;
+              }
+            }
+        }
+  }
+}
+
+//logo
+.logos{
+    margin: 96px 120px 111px 0;
+    height: 162px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-container{
+        width: 210px;
+        height: 122px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            filter: grayscale(100%);
+        }
+    }
+    &-container:hover{
+        border-radius: 10px;
+        box-shadow: 0px 1.85px 3.15px 0px #00000001,
+            0px 8.15px 6.52px 0px #00000002, 0px 20px 13px 0px #00000003,
+            0px 38.52px 25.48px 0px #00000003, 0px 64.81px 46.85px 0px #00000004,
+            0px 100px 80px 0px #00000005;
+        img{
+            filter: grayscale(0%);
+        } 
+        cursor: pointer;
+    }
+}
+
+//subscription
+.subscription{
+    margin: 0 150px 0 0;
+    width: 1170px;
+    height: 407px;
+    background-color:white;
+    margin-block: 124px 166px ;
+    position: relative;
+    // overflow: hidden;
+    .share-icon{
+      position: absolute;
+      right: -25px;
+      top: -20px;
+      z-index: 2;
+    }
+    &-container{
+      border-radius: 129px 20px 20px 20px;
+        height: 407px;
+        position: relative;
+        background-color: hsla(254, 74%, 91%, 0.2);
+        .decore1{
+            position: absolute;
+            opacity: 20%;
+            top: 130px;
+            left: 20px;
+        }
+        .decore2{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            opacity: 20%;
+        }
+        &-c{
+          padding: 2% 0% 0 13%;
+          height: 407px;
+          z-index: 3;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          // align-items: center;
+          text-align: center;
+          p{
+            margin-block: -30px 0;
+            @include PoppinsBold;
+            font-size: 33px;
+            line-height: 54px;
+            width: 880px;
+          }
+          div{
+            margin-block: -100px 0;
+            width: 80%;
+            display: flex;
+            gap: 30px;
+            position: relative;
+            svg{
+              position: absolute;
+              top: 38%;
+              left: 19%;
+              z-index: 3;
+            }
+            #email{
+              z-index: 2;
+              width: 26.059rem;
+              height: 68px;
+              border-style: none;
+              border-radius: 10px;
+              background-color: white;
+              margin-inline: 13% 0;
+            }
+            #email:focus{
+              outline-style: none;
+            }
+            #email::placeholder{
+              color: $text-color-light;
+              padding-left: 18%;
+            }
+            button{
+              align-self: stretch;
+              width: 180px;
+              border-radius: 10px;
+              background: linear-gradient(#FF946D, #FF7D68);
+              @include OpenSans;
+              font-size: 1.0625rem;
+              color: white;
+              border-style: none;
+              cursor: pointer;
+            }
+          }
+        }
+    }
+  .decore-plus{
+    position: absolute;
+    bottom: -19%;
+    right: -9%;
+    z-index: -1;
+    margin-inline: 1.5%;
+  }
+}
