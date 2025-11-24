@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@layer utilities {
+  .font-rubik {
+    font-family: 'Rubik Variable', sans-serif;
+  }
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+
+#root {
+  max-width: 1920px;
+  min-width: 360px;
+  margin: 0 auto;
+  /* padding: 0 8.125rem; */
+}
+
