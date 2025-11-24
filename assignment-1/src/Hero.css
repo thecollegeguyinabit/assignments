@@ -1,0 +1,60 @@
+
+@keyframes a-section{
+    from{
+        opacity: 0;
+        scale: 0.9;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes a-block-l{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transfrom: translateX(0px);
+    }
+}
+@keyframes a-block-r{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transfrom: translateX(0px);
+    }
+}
+
+@media (width >= 1024px){
+    .animate{
+        animation-timing-function: linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+    .animate-sec{
+        animation-name: a-section ;
+    }
+    .animate-b-l{
+        animation-name: a-block-l;
+    }
+    .animate-b-r{
+        animation-name: a-block-r;
+    }
+}
+
+@media (width <= 1024px){
+    .animate{
+        animation-timing-function: linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+    .animate-sec{
+        animation-name: a-section ;
+    }
+}
