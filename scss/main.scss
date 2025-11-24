@@ -1,0 +1,30 @@
+@forward 'globals';
+@forward 'layout';
+@use './globals/' as *;
+
+:root{
+    position: relative;
+    max-width: 1440px;
+    overflow-x: hidden;
+}
+
+main{
+    margin-inline: 150px 50px;
+}
+
+h2{
+    margin: 0;
+    color: $heading-color;
+    font-size: 3.125rem;
+    @include Volkhov;
+}
+h3{
+    font-size: 1.25rem;
+    line-height: 100%; 
+    font-weight: 600; 
+    @include OpenSans;
+}
+h6{
+     @include PoppinsBold;
+      margin: 10px 0;
+}

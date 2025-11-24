@@ -1,0 +1,42 @@
+
+$text-color-dark: #212832;
+$text-color-light: #5E6282;
+$heading-color: #14183E;
+$primary-font-bold: 'Volkhov', serif;
+$primary-font-reg: 'Poppins', sans-serif;
+$primary-font-semireg: 'Opens Sans', sans-serif;
+$secondary-font-reg: 'Google Sans Code', monospace;
+$tertiary-font-reg: 'Montserrat', sans-serif;
+
+@mixin GoogleSansBold {
+    font-family: $secondary-font-reg;
+    font-weight: 500;
+    font-size: 0.825rem;
+}
+
+@mixin OpenSans{
+    font-family: $primary-font-semireg;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+@mixin Poppins{
+    font-family: $primary-font-reg;
+    color: #5E6282;
+}
+
+@mixin PoppinsRegular {
+    @include Poppins;
+    font-weight: 400;
+    font-size: 1rem;
+}
+@mixin PoppinsBold{
+    @include Poppins;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+@mixin Volkhov{
+    font-family: $primary-font-bold;
+    font-weight: 700;
+}
